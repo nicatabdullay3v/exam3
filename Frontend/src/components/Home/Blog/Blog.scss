@@ -1,0 +1,49 @@
+#blog{
+    padding: 50px 0px;
+    background-color: rgba(211, 211, 211, 0.096);
+    .swiper{
+        padding: 50px;
+    }
+    .blog{
+        .text{
+            margin-bottom: 80px;
+            text-align: center;
+            .name{
+                p{
+                    color: #E7E7E7;
+                    font-size: 14px;
+                }
+            }
+            .title{
+                margin-bottom: 30px;
+            }
+        }
+        .card{
+            border: 1px solid lightgray;
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+            position: relative;
+            .card_down{
+
+            }
+            .card_image{
+                width: 100%;
+                height: 300px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .stars{
+                margin-bottom: 20px;
+            }
+            .description{
+                margin-bottom: 20px;
+            }
+            .name{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

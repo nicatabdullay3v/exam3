@@ -1,0 +1,66 @@
+#guests {
+    padding: 100px 50px;
+
+    .guests {
+        .text {
+            text-align: center;
+
+            .name {
+                p {
+                    color: #E7E7E7;
+                    font-size: 14px;
+                }
+            }
+
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+
+        .cards {
+            .swiper {
+                padding: 50px;
+
+            }
+
+            .card {
+                border: 1px solid lightgray;
+                text-align: center;
+                max-width: 350px;
+                padding: 70px 20px 50px 20px;
+                width: 100%;
+                position: relative;
+
+                .card_image {
+                    position: absolute;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    top: -40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .stars {
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    margin-bottom: 20px;
+                }
+
+                .name {
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+}

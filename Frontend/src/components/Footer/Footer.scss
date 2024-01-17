@@ -1,0 +1,19 @@
+footer{
+    background-color: rgb(39,39,43);
+    padding: 50px 0px;
+    color: white;
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+        ul{
+           
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+        }
+    }
+}
