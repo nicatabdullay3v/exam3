@@ -100,3 +100,16 @@ padding: 0px 100px;
     }
   }
 }
+
+.swiper-button-next{
+  color: white !important;
+}
+.swiper-button-next {
+  background-image: url(https://www.freeiconspng.com/img/36989);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-next::after {
+  display: none;
+}

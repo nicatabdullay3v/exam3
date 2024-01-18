@@ -3,7 +3,8 @@ import {
 
   } from "react-router-dom";
 import Home from "../pages/Home/Home";
-import Add from "../pages/add/add";
+import Add from "../pages/add/Add";
+import Basket from "../pages/Basket/Basket";
 
   export const router = createBrowserRouter([
     {
@@ -14,5 +15,8 @@ import Add from "../pages/add/add";
       path: "/add",
       element:<Add/>,
     },
-
+    {
+      path: "/b",
+      element:<Basket/>,
+    },
   ]);

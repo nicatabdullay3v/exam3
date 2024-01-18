@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.scss"
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,10 +15,14 @@ const Header = () => {
 
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
+                loop={true}
+                autoplay={{
+                    delay: 3000,
+                }}
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 

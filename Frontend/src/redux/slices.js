@@ -7,18 +7,25 @@ export const getdata = createAsyncThunk('data', async () => {
 export const productsSlices = createSlice({
   name: 'products',
   initialState: {
-    products: []
+    products: [],
+    back:[]
   },
   reducers: {
+    handeleSort:(state,action)=>{
+      state.products = state.back
+      state.products =state.products.filter((x)=> x.category == action.payload)
+
+    }
   },
   extraReducers: builder => {
     builder.addCase(getdata.fulfilled, (state, action) => {
     state.products = action.payload
+    state.back = action.payload
       })
   }
 })
 
 // Action creators are generated for each case reducer function
-export const {  } = productsSlices.actions
+export const {handeleSort  } = productsSlices.actions
 
 export default productsSlices.reducer

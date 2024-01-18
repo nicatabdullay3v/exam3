@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./NavBar.scss"
+import { useDispatch, useSelector } from 'react-redux';
+
 const NavBar = () => {
+  const basket = useSelector((state) => state.basket.basket)
+console.log(basket);
+const [newbasket, setnewbasket] = useState([])
   return (
    <>
    <nav>
@@ -11,6 +16,8 @@ const NavBar = () => {
             </div>
             <ul className="nav_right">
               <li>Home</li>
+              <li>basket <sub>{basket.length}</sub></li>
+
               <li>Menu</li>
               <li>Specialities</li>
               <li>Reservation</li>
